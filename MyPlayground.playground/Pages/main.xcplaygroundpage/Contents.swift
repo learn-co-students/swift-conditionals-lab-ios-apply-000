@@ -94,8 +94,6 @@ func isGreater(first: Int, second: Int) -> Bool {
 func isForceWith(name: String) -> Bool {
     if name == "Luke" {
         return true
-    } else if name == "Luke" {
-        return true
     } else if name == "Leia" {
         return true
     } else if name == "Anakin" {
