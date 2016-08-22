@@ -26,17 +26,22 @@ let b = 32
 */
 // write your code here
 
+print (a >= b)
+
 
 /*: Question 2
 ### 2. Print the result of a modulo b is equal to zero
 */
 // write your code here
 
+print (b % b == 0)
 
 /*: Question 3
 ### 3. Print the result of y times b less than or equal to a
 */
 // write your code here
+
+print ((y * b) <= a)
 
 
 /*: Question 4
@@ -44,6 +49,7 @@ let b = 32
 */
 // write your code here
 
+print (!(a >= b))
 
 
 /*: Question 5
@@ -51,12 +57,20 @@ let b = 32
 */
 // write your code here
 
+if (a % b == 0) {
+    print ("true")
+} else {
+    print ("false")
+}
 
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
 // write your code here
 
+if Double(a / b) >= x {
+    print ("true")
+}
 
 
 /*: Question 7
@@ -64,7 +78,11 @@ let b = 32
 */
 // write your code here
 
-
+if (Double(y) / x) >= 3 {
+    print ("true")
+    } else {
+    print ("false")
+}
 
 
 /*: Question 8
@@ -72,7 +90,9 @@ let b = 32
 */
 // write your code here
 
-
+if (Double(y) > x) && ((a / b) > 9) {
+    print ("true")
+}
 
 
 /*: Question 9
@@ -80,7 +100,14 @@ let b = 32
 */
 // write your code here
 
-
+func isGreater(a:Int, b:Int) -> Bool {
+    if a > b {
+        return true
+    } else {
+        return false
+    }
+   
+}
 
 
 
@@ -90,16 +117,31 @@ let b = 32
 */
 // write your code here
 
+func isForceWith(name:String) -> Bool{
+    if name == "Luke" || name == "Leia" || name == "Anakin" || name == "Obi Wan" || name == "Yoda" || name == "Vader"{
+        return true
+    } else {
+        return false
+    }
+}
 
+isForceWith("Luke")
 
 /*: Question 11
 ### 11. Create a function where the two arguments represent different bank account (one of those bank accounts is yours). What type should these arguments be if we are to then perform some math operations on them? Setup a conditional that will add 10 to your funds and minus 10 from the other funds (bank account) if the other account won't go negative if we were to take 10 dollars from it.
 */
 // write your code here
 
+func bankAccount(acct_1:Int, acct_2:Int) {
+    if (acct_2 >= 10) {
+       print(acct_1 + 10);
+       print (acct_2 - 10)
+    } else {
+        print ("Not possible")
+    }
+}
 
-
-
+bankAccount(10, acct_2: 10)
 
 /*:
  Checkout the solution branch - git co solution or git checkout solution and then scroll back down to this very spot to see a link that directs you to the solutions to the above questions.
