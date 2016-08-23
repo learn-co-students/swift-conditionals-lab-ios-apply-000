@@ -26,11 +26,15 @@ let b = 32
 */
 // write your code here
 
+print(a >= b)
+
 
 /*: Question 2
 ### 2. Print the result of a modulo b is equal to zero
 */
 // write your code here
+
+print(b == 0)
 
 
 /*: Question 3
@@ -38,12 +42,15 @@ let b = 32
 */
 // write your code here
 
+print((y*b) <= a)
+
 
 /*: Question 4
 ### 4. Print the inverse of a greater than or equal to b
 */
 // write your code here
 
+print(!(a>=b))
 
 
 /*: Question 5
@@ -51,12 +58,19 @@ let b = 32
 */
 // write your code here
 
+if b == 0 {
+    print(true)
+}
+
 
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
 // write your code here
 
+if (a / b) > Int(x) {
+    print(true)
+}
 
 
 /*: Question 7
@@ -64,7 +78,11 @@ let b = 32
 */
 // write your code here
 
-
+if (y / Int(x)) > 3 {
+    print(true)
+} else {
+        print(false)
+    }
 
 
 /*: Question 8
@@ -72,7 +90,9 @@ let b = 32
 */
 // write your code here
 
-
+if y > Int(x) && (a / b) > 9 {
+    print(true)
+}
 
 
 /*: Question 9
@@ -80,9 +100,13 @@ let b = 32
 */
 // write your code here
 
-
-
-
+func isGreater (number1:Int,number2:Int) -> Bool {
+    if number1 > number2 {
+        return true
+    } else {
+        return false
+    }
+}
 
 
 /*: Question 10
@@ -90,6 +114,13 @@ let b = 32
 */
 // write your code here
 
+func isForceWith (name:String) -> Bool {
+    if name == "Luke" || name == "Leia" || name == "Anakin" || name == "Obi Wan" || name == "Yoda" || name == "Vader" {
+        return true
+    } else {
+        return false
+    }
+}
 
 
 /*: Question 11
@@ -97,8 +128,18 @@ let b = 32
 */
 // write your code here
 
+func transferMoney (bankAccount:Double,myBankAccount:Double) {
+    var transToMyBankAcc = 10.00
+    if (bankAccount-transToMyBankAcc) >= 0 {
+        var myBankAccount = myBankAccount + transToMyBankAcc
+        var bankAccount = bankAccount - transToMyBankAcc
+        }
+    else {
+        print("Insufficient Funds")
+    }
+}
 
-
+transferMoney(550, myBankAccount: 450)
 
 
 /*:
