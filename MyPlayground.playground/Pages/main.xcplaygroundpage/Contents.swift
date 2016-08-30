@@ -132,16 +132,17 @@ isForceWith("Luke")
 */
 // write your code here
 
-func bankAccount(acct_1:Int, acct_2:Int) {
-    if (acct_2 >= 10) {
-       print(acct_1 + 10);
-       print (acct_2 - 10)
-    } else {
+func accounts(bankacct1:Int, bankacct2:Int)  {
+    if bankacct2 == 10 {
+        bankacct2 - 10;
+        bankacct1 + 10
+    }
+    else {
         print ("Not possible")
     }
 }
 
-bankAccount(10, acct_2: 10)
+accounts(10, bankacct2: 10)
 
 /*:
  Checkout the solution branch - git co solution or git checkout solution and then scroll back down to this very spot to see a link that directs you to the solutions to the above questions.
