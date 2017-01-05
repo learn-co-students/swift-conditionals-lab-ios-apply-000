@@ -18,25 +18,31 @@ let x = 5.0
 let y = 12
 let a = 321
 let b = 32
-
-
-
 /*: Question 1
 ### 1. Print the result of a greater than or equal to b
 */
 // write your code here
 
 
+print(Int(x) >= b)
+print(y >= b)
+print(a >= b)
+print(b >= b)
+
 /*: Question 2
 ### 2. Print the result of a modulo b is equal to zero
 */
 // write your code here
 
+print(b % 16)
 
 /*: Question 3
 ### 3. Print the result of y times b less than or equal to a
 */
 // write your code here
+
+print(y*b <= a)
+
 
 
 /*: Question 4
@@ -44,7 +50,7 @@ let b = 32
 */
 // write your code here
 
-
+print(Int(a)>=b)
 
 /*: Question 5
 ### 5. Print "true" if a modulo b is equal to zero
@@ -52,10 +58,23 @@ let b = 32
 // write your code here
 
 
+print("asdf")
+if (Int(a)%b) == 0 {
+    print("checking 0")
+    print(true)
+}
+
+
+
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
 // write your code here
+
+if a / b > Int(x) {
+    print(true)
+}
+
 
 
 
@@ -64,7 +83,10 @@ let b = 32
 */
 // write your code here
 
-
+if Double(y) / x > 3 {
+    print("omg")
+    print(true)
+}
 
 
 /*: Question 8
@@ -72,7 +94,10 @@ let b = 32
 */
 // write your code here
 
-
+if y > Int(x) && a/b > 9 {
+    print(true)
+    print("omfg")
+}
 
 
 /*: Question 9
@@ -81,14 +106,40 @@ let b = 32
 // write your code here
 
 
-
-
-
+func isGreater(firstNumber:Int, secondNumber:Int) -> Bool {
+    if firstNumber > secondNumber {
+        print(true)
+        return(true)
+    } else {
+        print(false)
+        return(false)
+                }
+    
 
 /*: Question 10
 ### 10. Write a function "isForceWith" that takes a String argument and returns true if the argument is the name of someone with whom the force is strong, and otherwise returns false. People who have the force are Luke, Leia, Anakin, Obi Wan, Yoda, Vader.
 */
 // write your code here
+
+
+func isForceWith(enforcedName:String) -> Bool   {
+    
+    if enforcedName == "Luke" {
+        return true
+    }
+     else if enforcedName == "Leia"{
+        return true
+    } else if enforcedName == "Anakin" {
+        return true
+    } else if enforcedName == "Obi Wan" {
+        return true
+    } else if enforcedName == "Yoda" {
+        return true
+    } else if enforcedName  == "Vader" {
+        else return false
+    }
+    
+}
 
 
 
@@ -97,7 +148,9 @@ let b = 32
 */
 // write your code here
 
-
+func bankAccounts(balance1:Int, balance2:Int) -> Bool {
+    
+}
 
 
 
@@ -105,3 +158,11 @@ let b = 32
  Checkout the solution branch - git co solution or git checkout solution and then scroll back down to this very spot to see a link that directs you to the solutions to the above questions.
  */
 // ❤️
+
+
+
+
+
+
+
+}
