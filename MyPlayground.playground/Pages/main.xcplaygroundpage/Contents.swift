@@ -88,7 +88,7 @@ func isForceWith(name: String) -> Bool{
         return false
     }
 }
-// used an array here instead of repetetive conditionals, hope that's okay!
+// used an array here instead of repetitive conditionals, hope that's okay!
 isForceWith(name: "Luke")
 isForceWith(name: "Tim Allen")
 /*: Question 11
