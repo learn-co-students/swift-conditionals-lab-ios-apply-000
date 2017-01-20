@@ -25,12 +25,36 @@ let b = 32
 ### 1. Print the result of a greater than or equal to b
 */
 // write your code here
+func compareWithB (Mynumber : Int){
+    let result = Mynumber >= b
+    print("\(result)");
+}
+
+print("Results of compareWithB")
+compareWithB(10)
+compareWithB(50)
+compareWithB(32)
+compareWithB(31)
+compareWithB(30)
+compareWithB(33)
+compareWithB(34)
 
 
 /*: Question 2
 ### 2. Print the result of a modulo b is equal to zero
 */
 // write your code here
+func ModuloB (Mynumber : Int){
+    let result = (Mynumber % b) == 0
+    print("\(result)");
+}
+
+print("Results of ModuloB")
+ModuloB(10)
+ModuloB(32)
+ModuloB(64)
+ModuloB(96)
+ModuloB(95)
 
 
 /*: Question 3
@@ -38,11 +62,32 @@ let b = 32
 */
 // write your code here
 
+func compareWithA (){
+    let result = (y * b) <= a
+    print("\(result)");
+}
+
+print("Results of compareWithA")
+compareWithA()
+
 
 /*: Question 4
 ### 4. Print the inverse of a greater than or equal to b
 */
 // write your code here
+func NotcompareWithB (Mynumber : Int){
+    let result = !(Mynumber >= b)
+    print("\(result)");
+}
+
+print("Results of NotcompareWithB")
+NotcompareWithB(10)
+NotcompareWithB(50)
+NotcompareWithB(32)
+NotcompareWithB(31)
+NotcompareWithB(30)
+NotcompareWithB(33)
+NotcompareWithB(34)
 
 
 
@@ -50,12 +95,30 @@ let b = 32
 ### 5. Print "true" if a modulo b is equal to zero
 */
 // write your code here
+func AModuloB (){
+    let result = (a % b) == 0
+    if result {
+        print("true");
+    }
+}
+
+print("Results of AModuloB")
+AModuloB()
 
 
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
 // write your code here
+func ADivB (){
+    let result = (a / b) > Int(x)
+    if result {
+        print("true");
+    }
+}
+
+print("Results of ADivB")
+ADivB()
 
 
 
@@ -63,7 +126,18 @@ let b = 32
 ### 7. Print "true" if y divided by x is greater than three, otherwise print false
 */
 // write your code here
+func YDivX (){
+    let result = (Double(y) / x) > 3.0
+    if result {
+        print("true");
+    }
+    else{
+        print("false")
+    }
+}
 
+print("Results of YDivX")
+YDivX()
 
 
 
@@ -72,6 +146,15 @@ let b = 32
 */
 // write your code here
 
+func MultipleCompare (){
+    let result = (Double(y) > x) && ((a / b) > 9)
+    if result {
+        print("true");
+    }
+}
+
+print("Results of MultipleCompare")
+MultipleCompare()
 
 
 
@@ -80,8 +163,13 @@ let b = 32
 */
 // write your code here
 
+func isGreater (a : Int, b : Int) -> Bool {
+    return a > b
+}
 
-
+print (" \(isGreater(5, b : 6))")
+print (" \(isGreater(10, b : 3))")
+print (" \(isGreater(4, b : 4))")
 
 
 
@@ -90,6 +178,24 @@ let b = 32
 */
 // write your code here
 
+func isForceWith (a : String) -> Bool {
+    if a == "Luke" || a == "Leia" || a == "Anakin" || a == "Obi Wan" || a == "Yoda" || a == "Vader"{
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+print("Force is with Luke = \(isForceWith("Luke"))")
+print("Force is with Behdad = \(isForceWith("Behdad"))")
+print("Force is with Obi Wan = \(isForceWith("Obi Wan"))")
+print("Force is with Asghar = \(isForceWith("Asghar"))")
+print("Force is with Leia = \(isForceWith("Leia"))")
+print("Force is with Anakin = \(isForceWith("Anakin"))")
+print("Force is with Yoda = \(isForceWith("Yoda"))")
+print("Force is with Vader = \(isForceWith("Vader"))")
+print("Force is with Ali = \(isForceWith("Ali"))")
 
 
 /*: Question 11
@@ -97,9 +203,21 @@ let b = 32
 */
 // write your code here
 
+func transferMoney (a : Double , b : Double) -> Double{
+    var newbalance = 0.0
+    if b - 10.0 >= 0.0 {
+        newbalance = a + 10.0
+        return newbalance
+    }
+    else {
+        return a
+    }
+}
 
-
-
+var FirstBalance = 10000.0
+var OtherBank = 45.0
+var NewBalance : Double = transferMoney(FirstBalance , b: OtherBank)
+print("New Balance is \(NewBalance)")
 
 /*:
  Click [here](https://github.com/learn-co-curriculum/swift-conditionals-lab/blob/solution/MyPlayground.playground/Pages/solution.xcplaygroundpage/Contents.swift) for the solution.
