@@ -26,6 +26,11 @@ let b = 32
 */
 // write your code here
 
+if (a>=b){
+    print(a)
+    
+}
+
 
 /*: Question 2
 ### 2. Print the result of a modulo b is equal to zero
@@ -33,10 +38,24 @@ let b = 32
 // write your code here
 
 
+if (a%b == 0){
+    print(a)
+    
+}
+
+
 /*: Question 3
 ### 3. Print the result of y times b less than or equal to a
 */
 // write your code here
+var i = y*b
+
+if (i<=a){
+    
+    print(y*b)
+    
+}
+
 
 
 /*: Question 4
@@ -44,6 +63,10 @@ let b = 32
 */
 // write your code here
 
+if (a>=b){
+    print(1/a)
+    
+}
 
 
 /*: Question 5
@@ -51,11 +74,23 @@ let b = 32
 */
 // write your code here
 
+if (a%b == 0){
+    print("true")
+    
+}
+
+
 
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
 // write your code here
+
+if ((a/b) > Int(x)){
+    
+    print("true")
+    
+}
 
 
 
@@ -64,6 +99,12 @@ let b = 32
 */
 // write your code here
 
+if (y/Int(x) > 3){
+    print("true")
+    
+}
+
+
 
 
 
@@ -71,6 +112,12 @@ let b = 32
 ### 8. Print "true" if y is greater than x and a divided by b is greater than 9
 */
 // write your code here
+
+if Double(y) > x  &&  a / b > 9 {
+    print("true")
+} else {
+    print("false")
+}
 
 
 
@@ -81,6 +128,13 @@ let b = 32
 // write your code here
 
 
+func isGreater(a:Int, b:Int) -> Bool {
+    if a > b {
+        return true
+    } else {
+        return false
+    }
+}
 
 
 
@@ -90,6 +144,29 @@ let b = 32
 */
 // write your code here
 
+func isForceWith(name:String) -> Bool {
+    if name == "Luke" {
+        return true
+        
+    } else if name == "Leia" {
+        return true
+        
+    } else if name == "Anakin" {
+        return true
+        
+    } else if name == "Obi Wan" {
+        return true
+        
+    } else if name == "Yoda" {
+        return true
+        
+    } else if name == "Vader" {
+        return true
+        
+    } else {
+        return false
+    }
+}
 
 
 /*: Question 11
@@ -97,7 +174,12 @@ let b = 32
 */
 // write your code here
 
-
+func transferTenDollars(myAccount: Int, otherAccount: Int) {
+    if otherAccount >= 10 {
+        myAccount + 10
+        otherAccount - 10
+    }
+}
 
 
 
