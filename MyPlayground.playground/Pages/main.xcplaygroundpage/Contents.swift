@@ -25,46 +25,53 @@ let b = 32
 ### 1. Print the result of a greater than or equal to b
 */
 // write your code here
-
+print(a >= b)
 
 /*: Question 2
 ### 2. Print the result of a modulo b is equal to zero
 */
 // write your code here
 
-
+print(a % b == 0)
 /*: Question 3
 ### 3. Print the result of y times b less than or equal to a
 */
 // write your code here
-
+print(y * b <= a)
 
 /*: Question 4
 ### 4. Print the inverse of a greater than or equal to b
 */
 // write your code here
 
-
+print(!(a >= b))
 
 /*: Question 5
 ### 5. Print "true" if a modulo b is equal to zero
 */
 // write your code here
 
-
+if a % b == 0 {
+    print("true")
+}
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
 // write your code here
 
-
-
+if Double(a / b) > x {
+        print("true")
+}
 /*: Question 7
 ### 7. Print "true" if y divided by x is greater than three, otherwise print false
 */
 // write your code here
 
-
+if y / Int(x) > 3{
+    print("true")
+}else{
+    print("false")
+}
 
 
 /*: Question 8
@@ -72,7 +79,13 @@ let b = 32
 */
 // write your code here
 
+if Double(y) > x && a / b > 9{
 
+        print("true")
+}else{
+
+        print("false")
+}
 
 
 /*: Question 9
@@ -81,7 +94,16 @@ let b = 32
 // write your code here
 
 
+func isGreater(first: Int, second: Int) -> Bool{
 
+    var answer = false
+    if first > second{
+        answer = true
+    }else{
+        answer = false
+    }
+    return answer
+}
 
 
 
@@ -89,7 +111,18 @@ let b = 32
 ### 10. Write a function "isForceWith" that takes a String argument and returns true if the argument is the name of someone with whom the force is strong, and otherwise returns false. People who have the force are Luke, Leia, Anakin, Obi Wan, Yoda, Vader.
 */
 // write your code here
+func isForceWith(name: String) -> Bool{
+    
+    var answer = false
+    if name == "Luke" || name == "Leia" || name == "Anakin" || name == "Obi" || name == "Wan" || name == "Yoda" || name == "Vader"{
+    
+        answer = true
+        print("true")
+    }
+    return answer
+}
 
+isForceWith(name: "DJ")
 
 
 /*: Question 11
@@ -98,7 +131,16 @@ let b = 32
 // write your code here
 
 
+func bank(bank1: Int, bank2: Int){
+    
+    if bank1 >= 10{
+        
+        bank1 - 10
+        bank2 + 10
+    }
+    
 
+}
 
 
 /*:
