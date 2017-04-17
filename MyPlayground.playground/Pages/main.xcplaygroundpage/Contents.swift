@@ -23,7 +23,7 @@ print(a>=b)
 /*: Question 2
 ### 2. Print the result of a modulo b is equal to zero
 */
-print(64 % b)
+print(a % b == 0)
 /*: Question 3
 ### 3. Print the result of y times b less than or equal to a
 */
