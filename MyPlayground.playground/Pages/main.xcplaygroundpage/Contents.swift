@@ -27,17 +27,15 @@ print(a % b == 0)
 /*: Question 3
 ### 3. Print the result of y times b less than or equal to a
 */
-print ( (y * b) <= a)
+print ((y * b) <= a)
 /*: Question 4
 ### 4. Print the inverse of a greater than or equal to b
 */
-print (!(y >= a))
+print (!(a >= b))
 /*: Question 5
 ### 5. Print "true" if a modulo b is equal to zero
 */
-var value = 0
-
-if value % b == 0 {
+if a % b == 0 {
     print(true)
 }else{
     print(false)
@@ -45,8 +43,7 @@ if value % b == 0 {
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
-var secondValue = 1
-if secondValue / b > Int(x) {
+if a / b > Int(x) {
     print(true)
 }else{
     print(false)
